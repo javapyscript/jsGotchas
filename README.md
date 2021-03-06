@@ -1,6 +1,6 @@
 # jsGotchas
 
-##
+
 1) What would be the output of this code?
 ```
 const a = new Boolean(false);
@@ -40,6 +40,16 @@ So +[] is the same as Number([]), which evaluates to 0.
 
 In short, {} + [] is an empty code block followed by an array coerced to a number.
 
+5) Now, after reading the prev explanation, can you guess the output of the following line on console?
+```
+[] + 10
+```
+
+6) How about this?
+```
+{} + 10
+```
+
 All that said, if you evaluate {} + [] inside an expression, it will return what you expect:
 
 >> ({} + []) 
@@ -48,3 +58,5 @@ Another interesting thing is that you cannot begin a statement with an object li
 
 { "object": "literal" };
 will throw a syntax error.
+
+
